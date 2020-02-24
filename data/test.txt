@@ -1,0 +1,340 @@
+	eng	kor
+1	Whose words should I be following?	어느 장단에 맞춰야 될지
+2	When I take one step forward	한 발자국 떼면
+3	My shadow grows one step bigger	한 발자국 커지는 shadow
+4	Waking up and opening my eyes, where am I?	잠에서 눈을 뜬 여긴 또 어디
+5	Maybe Seoul or New York or Paris	어쩜 서울 또 New York or Paris
+6	I’m getting up but my body’s swaying	일어나니 휘청이는 몸
+1	This shadow resembles me	날 닮은 그림자
+2	Is it him who’s shaking?	흔들리는 건 이놈인가
+3	Or is it me and my toes?	아니면 내 작은 발끝인가
+4	There’s no way I can’t be afraid	두렵잖을 리 없잖아
+5	There’s no way I’m okay	다 괜찮을 리 없잖아
+6	But still I know	그래도 I know
+7	Awkwardly, I flow	서툴게 I flow
+8	I’m flying with the dark wind	저 까만 바람과 함께 날아
+1	If you don’t wanna go crazy, you gotta go crazy	미치지 않으려면 미쳐야 해
+3	I’m throwing myself to both sides of the world	나를 다 던져 이 두 쪽 세상에
+6	It’s a beautiful prison that I’ve walked into	제 발로 들어온 아름다운 감옥
+1	Bring it, bring the pain oh yeah	가져와 bring the pain oh yeah
+3	Get on, bring the pain oh yeah	올라타봐 bring the pain oh yeah
+1	Everything will become my blood and flesh	모두 내 피와 살이 되겠지
+3	No fear, cuz I know the way	No fear, 방법을 알겠으니
+4	For every thing little, breathe	작은 것에 breathe
+5	It’s my oxygen and light in the darkness	그건 어둠 속 내 산소와 빛
+6	My strength for everything I do	내가 나이게 하는 것들의 힘
+7	Even if I fall, I’ll get up again, scream	넘어져도 다시 일어나 scream
+1	Cuz that’s what we always do	언제나 우린 그랬으니
+2	Even if my knees touch the ground	설령 내 무릎이 땅에 닿을지언정
+3	As long as I don’t get buried	파묻히지 않는 이상
+4	It’ll be just another happening	그저 그런 해프닝쯤 될 거란 걸
+8	Whatever you say, whatever anyone says	네가 뭐라던 누가 뭐라던
+0	Please allow me to breathe	나의 고통이 있는 곳에
+1	In this place where my pain lives	내가 숨 쉬게 하소서
+9	I’ll gladly be locked in this dark abyss	깜깜한 심연 속 기꺼이 잠겨
+1	Listen as I wish to hear, retaliate prejudice with atrocity	듣고 싶은 대로 막귀로
+2	At the age of twenty-two still childish, fair play	색안경엔 패악질로
+3	Jealous of my success? Turns green	스물둘 시기 치기 매한가진 Fair play
+4	I just do my thing without having time to consider revenge	내 성공을 시기? 배 아픔
+5	Just look down on them without any hard feelings	앙갚음 염두에 둘 겨를 없이 내 할 거
+6	Things that scare me, about 80 percent of them	별 감정 없이 걔를 업신여겨 대할 뿐
+7	Are the expectations from family, company and friends	겁이 나는 것들 중, 그중 한 8할쯤
+8	The contract as if I’m scared of the trap called failure	가족 회사 친구 놈들의 기대치
+9	My days are not numbered	마치 실망이란 덫이 두려 계약서 안 살아 시한부
+2	Unwind the rein, come here now	고삐를 풀어봐 얼른 와 일로
+3	On this trap I’m psycho	이런 Trap 위에 난 Psycho
+0	Everything including your life	너의 삶까지 다 (너의 삶까지 다)
+1	Yeah we run it like it’s ours	Yeah we run it like it’s ours (Yeah we run it like it’s ours)
+2	When we pull up run away (Run away, run away yeah)	When we pull up 도망가 (도망가 도망가 Yeah)
+3	Burn it all (Burn it all yeah)	태워 다 (태워버려 Yeah)
+4	All eyes are on where I stand	내가 선 위치로 시선들 쏠려
+5	Your spirit is lowered	너의 기는 구겨져 가며
+6	Raise our expectation, raise our standard	우리 기대치 높여 수준도 올려
+3	I’m Psycho on this trap	이런 Trap 위에 난 Psycho
+2	Ha, dazzle me dazzle me	Ha, dazzle dazzle dazzle me
+0	Don’t be such a tired cliché	뻔하게 평범한 거 말고
+1	(Not just ordinary things)	(그저 그런 거 말고)
+2	With something never heard	어디서 들어본 거 말고
+3	(Never existed before)	(없었던 거 말야)
+4	Dazzle me that	헉! 할 수 있게
+5	I can’t help covering my mouth with hand	내 입을 틀어막을 정도로 놀래켜 봐
+0	Not enough with just roses	누구나 쉽게 떠올릴
+1	That anyone can think of (No way)	장미 갖곤 안 될걸 (No way)
+2	Think beyond your imagination	상상을 좀 더 깨워 봐
+0	Inside my head being bored	무료한 머릿속에다
+1	Bang, bang, fireworks	불꽃들을 팡팡
+2	Should be like that	그 정돈돼야 할 거야
+0	Surprise me even more	놀라게 해 더
+3	Touch my heart even more	감동시켜 더
+0	If you’re confident	자신 있다면
+2	I like it now	지금이 좋아
+4	If you’re going to try something	해볼 거라면
+5	I want it to be more	안전한 것보단
+6	Adventurous than safe	모험이 좋아
+0	Even mysterious Bermuda Triangle	미스테리했던 버뮤다나
+1	And me being picky	까다롭다는 나나
+2	Can be solved baby	풀리게 되어있어 Baby
+3	So are you ready for dealing with me?	그래서 넌 날 감당할 준빈 됐어?
+5	1 percent more, fill it up a little bit more	1 percent 더, 한 끗을 채워
+2	Something never heard before	어디서 들어본 거 말고 Oh
+0	I can’t help it	참기도 힘들어
+1	It tickles my heart	심장이 간지러 Oh
+2	The more I think about it, the more I get surprised	생각해볼수록 놀라운 그런 거
+3	Finish it if you started	시작했으면 끝내 Yeah
+1	I don’t like it to be moderate	적당한 건 싫어
+2	Do it properly	제대로 해봐
+4	If I have to choose	골라보자면
+5	I like it running over	모자란 것보단
+6	Than being not enough	넘친 게 좋아
+0	There isn’t a right answer	정답은 없어
+1	Stop trying to make me fit you	네게 맞추려 하지마
+2	Stop trying to change me oh oh	날 바꾸려고 하지마 Oh oh
+0	As if you	모든 걸 너는
+1	Already know everything	다 이미 알고 있는 듯
+2	You hold back laughter	웃음을 꾹 참고서
+3	And wait for my answer	내 대답을 기다리고 있어
+0	If the correct answer isn’t an option	보기 중에 답이 없다면
+1	I cannot chose oh no oh no	나는 고르지 못해 Oh no oh no
+2	Maybe within your head	아마 너의 머릿속에선
+3	This scenario is already over	끝이 난 시나리오
+2	I’m neither	그 무엇도 아냐 난
+3	I don’t have the answer you want	니가 원하는 그 대답은 내게 없어
+6	I won’t tell you	말해주지 않아 난
+7	I don’t have the answer you already set	니가 정해 놓은 그 대답은 내게 없어
+0	I’m going to mix anything OK OK	아무거나 섞어 버릴래 OK OK
+1	It’s just different, not wrong	이게 너의 질문에 대답
+2	You’ll fight already picking sides	그냥 다른 거 틀린 거는 아니야
+3	I’ll take the road in between	이미 서로 싸우겠지 어느 편인지
+4	that wasn’t even visible	그 사이 보이지도
+5	The psyche tightens up again	않는 길로 걸어가겠어
+6	With endless jealousy	또 조여오는 심리 끝없는 시기
+7	You say newness is wrong and a problem	새로움을 부정하고 문제라고 칭해
+8	It’ll eventually be called a mutant	결국 불리겠지 돌연변이로
+6	I won’t tell you	말해 주지 않아 난
+0	As you hide numerous thoughts behind your back	많은 생각을 등 뒤에 숨긴
+1	Above your mask	너의 가면 위에
+2	A dilemma grows deeper and deeper	더욱 깊어져만 가는 딜레마
+1	A right answer is meaningless	의미 없어 정해진 답
+3	No one knows that	그건 누구도 몰라
+5	Countless colors	셀 수 없이 많은 Color
+0	Moon, stop your work	달아 일을 멈추고 Oh
+1	Keep the dark night dark	까마득한 밤을 유지해
+2	The sun, keep sleeping	태양은 쭉 잠들고
+3	Just do as I say	그냥 내가 시키는 대로
+1	Like a fully fueled jet, broom up	기름 가득 제트처럼 Broom up
+2	I’m ready, I’m ready	다 준비됐거든 준비됐거든
+3	I’ll bother you endlessly	끝없이 괴롭힌 후
+4	And leave nothing nothing	난 아무것도 아무것도
+5	Behind and disappear	남기지 않고 사라져
+0	As the corrupt mind expands	타락한 그 맘이 커질수록
+1	The maze keeps morphing	자꾸만 바뀌는 미로
+2	Once the cold mist surrounds you	차가운 안개가 널 감싸면
+3	You won’t remember	기억하지 못할 거야
+0	Close your eyes Red Sun	눈 감아 Red Sun
+1	Repeating trap and night	반복되는 Trap and night
+3	Circling you again	다시 또 니 주윌 맴돌아
+1	The wall that blocks you, you can’t escape	니 앞을 막은 Wall 벗어날 수 없어
+2	You don’t know, by a blade	You don’t know 스스로
+3	You drew yourself, you’ll be in danger	꺼내든 칼날에 넌 위험에 빠질 거야
+0	As the sun sets and the darkness comes	석양이 지고 어둠이 오면
+1	You’ll know too, the rule here oh	너도 알게 될걸 이곳의 Rule oh
+2	I’ll take you to the starting point	시작점에 널 데려다줄게
+3	Again a new game come roar	또다시 새로운 Game come Roar
+3	I want to laugh when I see you struggle	몸부림치는 널 보면 웃겨
+3	Sink in Red Sun	빠져들어 Red Sun
+7	Where nothing is	아무것도 없는 곳
+0	The end of the night, the early morning air cold	이 밤의 끝 새벽의 공기가 차고
+1	Your eyes now shed tears, you’ll regret it	너의 두 눈 어느새 눈물이 흐르고
+2	Your whole body will shiver	후회되겠지 온몸이 떨리겠지
+3	I’ll be back when that shiver stops	그 떨림이 멈추면 다시 올게
+3	(It’s more fun to watch Red Sun)	(보는 게 더 재밌어 Red Sun)
+0	Close your eyes again Red Sun	다시 눈 감아 Red Sun
+1	Your eyes that look at me go wow!	날 보는 너의 눈빛은 Go wow!
+3	No need to hesitate at all, go out	망설일 거 1도 없어 Go out!
+0	Yeah, just be ready to have fun	Yeah 모두 즐길 준비만 해
+0	Alright, each movement of mine receives the spotlight	All right 이 몸짓 하나하나 Spotlight
+1	Yeah, you’ll be pulled to me, highlight	Yeah 이제 끌리게 돼 Highlight
+2	Skintight, I wanna shine every day	Skintight 반짝일래 매일
+0	Don’t be shy, fall into it	눈치 좀 보지마 빠져들어
+1	I know you enjoy it	그걸 넌 즐기잖아
+0	If I want something, I do it	난 내가 원한다면 뭐든지 해
+1	And no one can stop me	and 누구도 나를 막지 못해
+2	I won’t stop, are you ready now	멈추지 않아 Are you ready now
+3	Shout it out confidently	외쳐봐 당당하게
+0	Say my name Baby Ratata, you’re into me	Say my name Baby Ratata 넌 반했잖아
+1	Say my name, I won’t stop, nanana	Say my name 멈추지 않아 nanana
+2	Say my name Baby Ratata, I’m shining even more	Say my name Baby Ratata 더 빛나잖아
+3	Say my name, shout out loud nanana	Say my name 크게 외쳐봐 nanana
+0	Look into my eyes, look at my smile	내 눈을 봐 미소를 봐
+1	You’ll start to follow me	따라 하게 될 걸
+3	You’ll start to try	노력하게 될거야
+4	Come closer and unravel me	가까이 와 날 풀어봐
+5	Though it won’t be easy	쉽진 않겠지만
+7	Harder than a math formula	수학 공식보다 더
+0	Alright, each place I look at has a spotlight	All right 내 시선 하나하나 Spotlight
+1	Wherever I go, I become the highlight	어디든 중심이 돼 Highlight
+2	Keep shine I wanna shine every day	Keep shine 반짝일래 매일
+0	Falling, falling, falling	빠진다 빠진다 빠져들어
+1	I know you don’t hate it	그게 넌 싫지 않아
+1	And you can’t handle it	and 넌 그런 나를 감당 못해
+2	Me myself and I, I’m getting hot	Me myself and I 뜨거워져 난
+3	I’m rising above the clouds	달려가 구름 위로
+0	Lalala (Say my name)	랄랄랄라 랄랄라 랄랄랄랄라 (Say my name)
+1	Lalala	랄랄라라 랄랄라 랄랄라  (Just say my name)
+2	Lalala (Say my name)	랄랄랄라 랄랄라 랄랄랄랄라 (Oh) (Say my name)
+3	Lalala	랄랄랄라 랄랄라 랄랄라
+0	Since when were we destined to meet	언제부터 우리가 만날
+1	On days I felt small and smaller	운명이었을까 작고도 작았던 날
+2	You came to me like this	이렇게 날 찾아와서는
+3	And taught me what happiness was	행복이 뭔지 알려줬어
+0	To you, who lights up my dim tomorrow (to you)	희미한 내일을 밝혀 주는 네게 (너에게)
+1	There are many things I haven’t said yet, for real (yeah)	못다 한 말들이 많아 For real (Yeah)
+0	We might be looking towards the same place	어쩜 우린 같은 곳을 보고 있을지도 몰라
+0	Following the overflowing light	쏟아지는 빛을 따라가
+1	And you’re there	그곳엔 네가 있어
+2	All I can see is you	오직 너만 보여
+0	We’re walking together	함께 걷고 있잖아
+1	And unknowingly reached up to here	어느새 이곳까지
+2	Now when I look back, my heart warms up	이제 뒤를 돌아보면 따뜻해질 나의 마음이
+0	Always stay with me (with me)	언제나 함께해줘 (With me)
+0	You, who became a light in the dark sky	어두운 밤하늘 빛이 되어준 너
+1	I’m going to tell you that I’m really thankful	정말 고맙다고
+2	I’m going to run and embrace you	말해줄 거야 달려가 안아줄 거야
+3	Even when I’m about to fall down, my heart	지쳐 쓰러진대도 내 맘
+4	Will never change	절대 변치 않아
+5	I’ll protect you, You’re the only one I’ve needed	지켜줄 거야 You’re the only one I’ve needed
+0	Beautiful Light, Beautiful Light	Beautiful Light Beautiful Light
+0	Beautiful Light, my Beautiful Light	Beautiful Light My Beautiful Light
+1	Because you’re here, my world has lit up yeah	네가 있어 내 세상이 밝아졌어 Yeah
+2	I’ll take a step closer now	이젠 내가 한 발 더 다가갈게
+3	You just stay there, I’ll go and find you	너는 거기 서 있어 내가 널 찾아갈게
+0	The small lights gather and show a miracle	작은 빛이 모여 기적을 보여 주네
+1	You and I, we become one	너와 나 우리 하나가 되네
+2	We might have already been	어쩜 우린 이미
+3	Searching for each other yeah yeah	서로를 찾고 있었는지 몰라 Yeah yeah
+0	We’re walking together and unknowingly reached up to here	함께 걷고 있잖아 어느새 이곳까지
+2	Because I’ll stand up again and	다시 일어날 테니까
+3	Even if I fall, you’ll be by my side	넘어져도 네가 옆에 있으니까
+6	Because you’re my star	나의 별은 너니까
+7	Would you shine bright always	언제나 환히 비춰줄래
+0	Don’t say anything	아무 말도 하지 마
+1	Don’t care about what others say	남의 말은 신경 꺼
+2	Because I’m going to sing my song for you	내 노랜 널 위해 부를 거니까
+3	So don’t say a word	한마디도 하지 마
+4	I only have thoughts about you	온통 네 생각뿐이야
+5	The spot next to you is for me	네 옆은 날 위한 자리
+7	I don’t know why you act like you don’t know	왜 모른 척하는지 몰라
+1	Put away your doubts	의심 따윈 접어둘래
+2	You should sense it too	너도 눈치로 알아
+3	That I’m someone who exists for you	난 너를 위한 존재인걸
+4	Alright, now put it on infinite repeat	자 이제 무장해제를 해봐
+5	Love arrow shooting, raise your hand	Love arrow shooting 손들어
+0	Even if you’re bubbly, I don’t care	통통 튀는 너도 나는 Don’t care
+1	Even when playing hard to get, not at all	튕겨대도 전혀
+0	I write a poem for you	너를 위해 시를 써
+1	I write anything for you	너를 위해 뭐든 써
+2	Completely falling deep	완전히 푹 빠져버려
+3	You control me	네가 날 Control해버려
+4	Even if I know that, I lose	알아도 난 패배
+5	I get sucked in like I’m crazy, but it’s just towards you	미친 것처럼 빨려가 너한테만 그래
+6	Even if I know that, I go on my knees	알면서도 꿇어
+7	Seems like I’m intoxicated by your mysterious pheromone	묘한 페로몬 취한 듯
+8	You control me however you want	네 맘대로 날 Control
+0	I’ve waited up til now and	지금까지 내가 기다려왔고
+1	As if you have no interest	관심 없단 듯이 퉁
+2	Shooting towards the front	전방을 향해 Shoot
+3	In last night’s dream, I held your hand and danced	어젯밤 꿈에서 네 손을 잡고 춤
+4	On your hips, I laid my hand	허리춤 내 손을 툭
+5	Listen to my sincerity on how I follow you now	이제는 내가 아닌 너를 따라가는 나의
+6	And not myself. Call my name	진심을 들어 이름을 불러
+7	The hidden shadow, I bring out it’s true identity	숨겨둔 그림자 본체로 끌어당겨
+9	You stop my senses	나의 감각을 멈춰버려
+10	You flow throughout my blood vessels and control my heart	네가 혈관에 흘러 심장을 Control
+0	The day is quite long	하루가 참 길다
+1	Even when I close and open my eyes,	눈을 감고 떠봐도
+2	It’s always the same day	매번 같은 날인걸
+3	Am I the only one	나만 그래
+4	You’ve already forgotten,	벌써 넌 잊었는데
+5	You’re probably doing well	너는 괜찮을 텐데
+0	In worries	입속에 맴도는
+1	That the name lingering on my lips will escape	이름 샐까 봐
+2	I try to hold onto my chest and suppress it, but	가슴 붙잡고 참아보지만
+3	Even though I feel like dying,	죽을 것 같지만
+4	Even if I just smile like this,	마냥 웃어봐도 Oh
+5	Oh, I seem like a crazy person, oh	미친 사람처럼 Oh
+6	I pray that these feelings of longing turn into hate	그리움이 미움이 되기만을 I pray
+0	It’s the same, I’m hurting again today	똑같다 오늘도 아파 온다
+1	Even if you throw me away, only one (Hey)	버려도 Only one (Hey)
+2	Even if you erase me, only one (Hey)	지워도 Only one (Hey)
+3	It’s hurting more, only pain rushes upon me	더한다 통증만 밀려온다
+4	Without you, only one (Hey)	너 없이 Only one (Hey)
+5	By myself, only one	나 혼자 Only one
+0	Oh, am I the only one	Oh 나만 그래
+6	Am I the only one	Am I The Only One
+0	They say everyone’s the same, but I’m the only one	모두가 같을 거래 나만 그래
+1	The doctor tells me that it’s just a cold, I’m sniffling	의사는 내가 이런 게 감기래 훌쩍이네
+2	Maybe I’ve been influenced by	네가 놓고 간
+3	The withered flowers you’ve left behind	시든 꽃에 물든 건지
+4	Covered completely in dust, farewell covered by a toilet Ya	수북이 쌓여 먼지 이별 덮인 변기 Ya
+0	I thought I let it pass by, but once again	흘려보냈다 생각했는데 다시 또
+1	Acting like it never happened, you do it once again	언제 그랬냐는 듯이 네가 다시 또
+2	A defensive attitude as to not get hurt	상처받지 않기 위한 방어적인 태도
+3	Once again, you stick to me just as much	밀어낸 만큼
+4	As I’ve pushed you away	다시 또 불어 내게로
+3	Even though I feel like dying	죽을 것 같지만
+4	Even if I just smile like this	마냥 웃어봐도
+0	That’s right, I’m the only one	그래 나만 그래
+1	Trapped in the mold that you’ve created.	네가 만든 틀에
+2	It’s easier for me now to be left alone	갇혀 이젠 혼자 남겨지는 게 더 편해
+3	I’m like this right now,	나는 지금 이런데
+4	But how have you been these days	요새 너는 좀 어때
+0	That’s right, hold me back and tell me not to leave	그래 가지 마라 뜯어말려
+1	Because I’m getting angry	눈 뒤집히고 있으니까
+2	Because I’m going to express myself, like others do	난 남들 다하는 표현과
+3	In my own way	내 식대로 하려니까
+4	Without things like beats	박자 그딴 것 없이
+5	I can’t even match a beat with you	너랑도 박자가 안 맞는데
+0	It’s drying up, even my breath is drying up	마른다 숨조차 말라간다
+3	It’s hurting more, only pain rushes upon me	타간다 슬픔이 재가 된다
+0	Baby, I don’t know what’s what	Baby 뭐가 뭔지 모르겠어
+1	I’m dizzy and spinning around	어지럽고 뱅뱅 돌아
+2	Is this reality or a dream	현실이야 꿈인 거야
+3	No no, I’m confused	No No 헷갈려
+4	Oh, a light shines from behind your face	Oh 네 얼굴 뒤엔 빛이 비쳐
+5	A female protagonist aura, oh	여주인공 아우라 Oh
+6	My whole body seems to be frozen	온몸이 얼었나 봐
+7	My lips seem to be stuck together	입술이 붙었나 봐
+0	Snap out of it and say something	정신 차리고 말 좀 해
+1	Ready ready go	Ready Ready Go
+0	My heart is on fire, fire, fire, fire, fire	내 심장이 타 타 타 타 타
+1	I Iet go, let go, let go, let go, let go of my senses	정신줄을 놔 놔 놔 놔 놔
+2	You’re my own goddess	나만의 여신이야 너만
+3	Only you can disarm me	나를 무장 해제해
+4	Oh, my love is on fire, fire, fire, fire, fire	Oh 내 사랑이 타 타 타 타 타
+5	I let go, let go, let go, let go, let go of my pride	자존심은 놔 놔 놔 놔 놔
+6	At first glance, I fall in love	난 첫눈에 딱 Fall in love
+7	Let it go, let it go	Let it go Let it go
+0	On fire, on fire	타 타
+1	Love me, love me, love me yeah	Love me Love me Love me yeah
+4	On fire	타 타
+0	Your slight silhouette ruins multiple people	비스듬히 비친 너의 실루엣이 사람 여럿 망쳐
+1	Their eyes are on you, I’m worried about any more	시선이 감겨 더는 불안 Uh
+2	Yeah, it bothers me, all of it	Yeah 신경 쓰여 다
+3	I can’t say anything in case I say something else in my imagination, stop	다른 말 할까 봐 입을 못 떼 상상으론 Stop
+4	The smoke spreads	불 그을린 번짐
+5	Even though I know that it’s repeating a pain that won’t go away	또 가시지 않는 아픈 반복인 걸 알면서도 난
+6	I get intoxicated by the flower bloomed in your wrist once again	네 손목에 피어 있는 꽃에 또 홀려
+7	And I, who’s following you, won’t ever be able to turn this fire off, yeah	널 따라가고 있는 난 이 불을 절대 못 꺼 Yeah
+0	Before you disappear, I’m going to confess	사라지기 전 고백해
+1	Ready ready yo	Ready Ready Go
+0	You, who I found after a long, long time	긴긴 시간 속에 찾은 너
+1	Even if my body burns faster	더 빠르게 내 몸이 타도
+2	The path towards the fire is you	불길의 방향은 너
+0	I’m going to reach you safely	네게 안착할 거야
+1	I won’t be kind to others	남에게 안 착할 거야
+2	Can you guess how I’m feeling?	지금 내 기분을 가늠하시나요
+3	How I feel, dressed up like this oh yeah	쫙 빼입은 채 기분은 Oh yeah
+4	1, 2, 3, I’ll show some courage	1 2 3 용기 내볼게
+5	Honestly, you’ve fallen for me	솔직히 빠졌는걸
+6	1, 2, 3, I’m walking towards you	1 2 3 너에게 걸어
+7	Please say something	뭐라고 말 좀 해줘
