@@ -47,8 +47,8 @@ def clean_text(text):
     text = re.sub(r"n'", "ng", text)
     text = re.sub(r"'bout", "about", text)
     text = re.sub(r"'til", "until", text)
-    text = re.sub(r"([?.!,¿])", r" \1 ", text)
-#     text = re.sub(r"[-()\"#/@;:<>{}`+=~|.!?,]", "", text)
+    text = re.sub(r"([?.!,¿])", r"", text)
+    text = re.sub(r"[-()\"#/@;:<>{}`+=~|.!?,]", "", text)
 #     text = re.sub(r"[^a-zA-Z?.!,¿]+", " ", text)
     return text
 
@@ -88,8 +88,9 @@ def preprocess_sentence(sentence):
     return sentence
 
 
-def loss_function(loss_object,real,pred):
+def loss_function(real,pred):
     mask = tf.math.logical_not(tf.math.equal(real,0))
+    loss_object = SparseCategoricalCrossentropy()
     loss_ = loss_object(real,pred)
     
     mask = tf.cast(mask,dtype=loss_.dtype)
@@ -98,29 +99,7 @@ def loss_function(loss_object,real,pred):
     return tf.reduce_mean(loss_)
 
 
-# @tf.function
-def train_step(inp, targ, enc_hidden,encoder_model,decoder_model, loss_function, target_lang_tokenizer,batch_size):
-    
-    loss = 0
-    
-    with tf.GradientTape() as tape:
-        enc_output, enc_hidden_state = encoder_model(inp, enc_hidden)
-        
-        dec_hidden_state = enc_hidden_state
-        
-        dec_input = tf.expand_dims([target_lang_tokenizer.word_index['<start>']] * batch_size, 1)
-        
-        for t in range(1, targ.shape[1]):
-            pred, dec_hidden, _ = decoder_model(dec_input, dec_hidden_state, enc_output)
-            loss += loss_function(targ[:,t],pred)
-            dec_input = tf.expand_dims(targ[:,t],1)
-            
-    batch_loss = (loss/int(targ.shape[1]))
-    variables = encoder_model.trainable_variables + decoder_model.trainable_variables
-    gradients = tape.gradient(loss, variables)
-    optimizer.apply_gradients(zip(gradients,variables))
-    
-    return batch_loss
+
 
 
 def evaluate(sentence,max_length_targ,max_length_inp,encoder_model,decoder_model,input_lang_tokenizer,target_lang_tokenizer,units):
@@ -131,11 +110,12 @@ def evaluate(sentence,max_length_targ,max_length_inp,encoder_model,decoder_model
     input_sentence = [input_lang_tokenizer.word_index[i] for i in sentence.split(' ')]
     input_sentence = pad_sequences([input_sentence],maxlen=max_length_inp,padding='post')
     
-    
+    print(input_sentence)
     input_sentence_tensor = tf.convert_to_tensor(input_sentence)
     result = ''
     
-    hidden = [tf.zeros((1,units))]
+    print(input_sentence_tensor)
+    hidden = [tf.zeros((1, units))]
     enc_output, enc_hidden = encoder_model(input_sentence_tensor, hidden)
     
     dec_hidden = enc_hidden
@@ -173,11 +153,26 @@ def plot_attention(attention, sentence, pred):
     plt.show()
 
 
-def translate(sentence):
-    result,sentence,attention_plot = evaluate(sentence,max_length_targ,max_length_inp,encoder_model,decoder_model,input_lang_tokenizer,target_lang_tokenizer,units)
+# @tf.function
+def train_step(inp, targ, enc_hidden,encoder_model,decoder_model, target_lang_tokenizer,batch_size):
+    optimizer = Adam()
+    loss = 0
     
-    print(f"Input: {sentence}")
-    print(f"Predicted: {result}")
+    with tf.GradientTape() as tape:
+        enc_output, enc_hidden_state = encoder_model(inp, enc_hidden)
+        
+        dec_hidden_state = enc_hidden_state
+        
+        dec_input = tf.expand_dims([target_lang_tokenizer.word_index['<start>']] * batch_size, 1)
+        
+        for t in range(1, targ.shape[1]):
+            pred, dec_hidden, _ = decoder_model(dec_input, dec_hidden_state, enc_output)
+            loss += loss_function(targ[:,t],pred)
+            dec_input = tf.expand_dims(targ[:,t],1)
+            
+    batch_loss = (loss/int(targ.shape[1]))
+    variables = encoder_model.trainable_variables + decoder_model.trainable_variables
+    gradients = tape.gradient(loss, variables)
+    optimizer.apply_gradients(zip(gradients,variables))
     
-    attention_plot = attention_plot[:len(result.split(' ')), :len(sentence.split(' '))]
-    plot_attention(attention_plot,sentence.split(' '),result.split(' '))
+    return batch_loss
