@@ -70,7 +70,7 @@ def tokenize(lang):
 
     tensor = lang_tokenizer.texts_to_sequences(lang)
 
-    padded_tensor = pad_sequences(tensor, maxlen=max_length(tensor), padding='post')
+    padded_tensor = pad_sequences(tensor, maxlen=max_length(tensor), padding='post',truncating='pre')
 
     return padded_tensor, lang_tokenizer
 
