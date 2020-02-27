@@ -136,3 +136,41 @@ def predict_sequence(model, tokenizer, source):
             break
         target.append(word)
     return ' '.join(target)
+
+
+if __name__ == "__main__":
+
+    df_all = pd.read_csv('data/final_df_fix.txt',sep='\t')
+
+    eng_all = df_all['eng'].apply(clean_text)
+    eng_all = eng_all.apply(start_end_tagger)
+
+    kor_all = df_all['kor'].apply(clean_text)
+    kor_all = kor_all.apply(start_end_tagger)
+
+    eng_tensor, eng_tokenizer = tokenize(eng_all)
+    kor_tensor, kor_tokenizer = tokenize(kor_all)
+
+    eng_vocab_size = len(eng_tokenizer.word_index)+1
+    kor_vocab_size = len(kor_tokenizer.word_index)+1
+
+    eng_max_length = len(eng_tensor[0])
+    kor_max_length = len(kor_tensor[0])
+
+    X_train, X_test, y_train, y_test = train_test_split(eng_tensor,kor_tensor, test_size=0.2)
+
+    y_train = encode_output(y_train, kor_vocab_size)
+    y_test = encode_output(y_test, kor_vocab_size)
+
+    model = define_model(eng_vocab_size, kor_vocab_size, eng_max_length, kor_max_length, 50)
+    model.compile(optimizer='adam', loss='categorical_crossentropy',metrics=['mae', 'acc'])
+
+    log_dir="logs/fit/"
+    tensorboard_callback = TensorBoard(log_dir=log_dir, histogram_freq=1, profile_batch=1000000)
+
+    filename = 'model.h5'
+    checkpoint = ModelCheckpoint(filename, monitor='val_acc', verbose=1, save_best_only=True)
+
+    model.fit(X_train, y_train, epochs=10, batch_size=20, validation_data=(X_test, y_test), callbacks=[checkpoint,tensorboard_callback], verbose=2)
+
+    print(predict_sequence(model,target_lang_tokenizer,input_tensor[1000]))
