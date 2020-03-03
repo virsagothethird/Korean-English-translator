@@ -73,7 +73,7 @@ The model we will be using is a Seq2Seq model made in Tensorflow. It is a simple
 
 Very simply, the Encoder reads in the input sequences and summarizes the information as internal state vectors(hidden state and cell state). The decoder then uses these vectors as initial states and starts to generalize the output sequences. Since the Encoder outputs 2D vectors and the Decoder expects 3D arrays, the RepeatVector layer is used to ensure that the output of the Encoder is repeated a suitable number of times to match the expected shape. The TimeDistributed-wrapped Dense layer  applies each slice of the sequence from the Decoder LSTM as inputs to the Dense layer so that one word can be predicted at a time.
 
-As this model will be dealing with multi-class classification, we will be using Categorical crossentropy as out loss function.
+As this model will be dealing with multi-class classification, we will be using Categorical crossentropy as our loss function.
 
 
 
