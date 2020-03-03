@@ -27,8 +27,17 @@ from tensorflow.keras.utils import to_categorical
 
 
 def clean_text(text):
-    '''Clean text by removing unnecessary characters and altering the format of words.'''
+    """
+    Clean text by removing unnecessary characters and altering the format of words.
 
+    Parameters
+    ----------
+    text : pandas series
+
+    Returns
+    -------
+    pandas series with cleaned text
+    """
     text = text.lower()
     # text = re.sub(r"tom", "", text)
     # text = re.sub(r"톰은", "", text)
@@ -68,22 +77,57 @@ def clean_text(text):
     return text
 
 
-def start_end_tagger(decoder_input_sentence):
+def start_end_tagger(sentence):
+    """
+    Adds a <start> and <end> tag to each sentence.
+
+    Parameters
+    ----------
+    sentence : str
+
+    Returns
+    -------
+    str
+    """
+    
     start_tag = "<start> "
     end_tag = " <end>"
-    final_target = start_tag + decoder_input_sentence + end_tag
+    final_target = start_tag + sentence + end_tag
     return final_target
 
 
-def max_length(tensor):
-    return max(len(t) for t in tensor)
+def max_length(sequence):
+    """
+    Returns the max length of a sequence.
+
+    Parameters
+    ----------
+    sequence : array
+
+    Returns
+    -------
+    int
+    """
+    return max(len(t) for t in sequence)
 
 
-def tokenize(lang):
+def tokenize(clean_text):
+    """
+    Transforms cleaned text to numerical values
+
+    Parameters
+    ----------
+    clean_text : Pandas series
+
+    Returns
+    -------
+    Array, tokenizer object
+    """
+
     lang_tokenizer = Tokenizer(filters='')
-    lang_tokenizer.fit_on_texts(lang)
+    lang_tokenizer.fit_on_texts(clean_text)
 
-    tensor = lang_tokenizer.texts_to_sequences(lang)
+    tensor = lang_tokenizer.texts_to_sequences(clean_text)
 
     padded_tensor = pad_sequences(tensor, maxlen=max_length(tensor), padding='post',truncating='pre')
 
@@ -91,6 +135,17 @@ def tokenize(lang):
 
 
 def preprocess(language):
+    """
+    Applies the clean_text and start_end_tagger functions to pandas series
+
+    Parameters
+    ----------
+    language : Pandas series
+
+    Returns
+    -------
+    Pandas series
+    """
     language = language.apply(clean_text)
     
     language = language.apply(start_end_tagger)
@@ -98,11 +153,36 @@ def preprocess(language):
     return language
 
 def preprocess_sentence(sentence):
+    """
+    Applies the clean_text and start_end_tagger functions to a string
+
+    Parameters
+    ----------
+    sentence : str
+
+    Returns
+    -------
+    str
+    """
+    
     sentence = clean_text(sentence)
     sentence = start_end_tagger(sentence)
     return sentence
 
 def encode_output(sequences, vocab_size):
+    """
+    One Hot Encodes the sequences
+
+    Parameters
+    ----------
+    sequences : 2d array
+    vocab_size : int, length of tokenizer object word index +1
+
+    Returns
+    -------
+    3d array
+    """
+
     ylist = list()
     for sequence in sequences:
         encoded = to_categorical(sequence, num_classes=vocab_size)
@@ -112,27 +192,69 @@ def encode_output(sequences, vocab_size):
     return y
 
 
-def define_model(src_vocab, tar_vocab, src_timesteps, tar_timesteps, n_units):
+def define_model(inp_vocab_size, tar_vocab_size, inp_timesteps, tar_timesteps, n_units):
+    """
+    Creates a Tensorflow Sequential Model
+
+    Parameters
+    ----------
+    inp_vocab_size : int, length of input tokenizer object word index +1
+    tar_vocab_size : int, length of output tokenizer object word index +1
+    inp_timesteps : int, input sequence max length
+    tar_timesteps : int, target sequence max length
+    n_units : int
+
+    Returns
+    -------
+    Tensorflow Sequential Model
+    """
+
     model = Sequential()
-    model.add(Embedding(src_vocab, n_units, input_length=src_timesteps, mask_zero=True))
+    model.add(Embedding(inp_vocab_size, n_units, input_length=inp_timesteps, mask_zero=True))
     model.add(LSTM(n_units,recurrent_regularizer='l2', dropout=0.15))
     model.add(RepeatVector(tar_timesteps))
     model.add(LSTM(n_units, return_sequences=True,recurrent_regularizer='l2', dropout=0.15))
-    model.add(TimeDistributed(Dense(tar_vocab, activation='softmax')))
+    model.add(TimeDistributed(Dense(tar_vocab_size, activation='softmax')))
     return model
 
 
-def word_for_id(integer, tokenizer):
-    for word, index in tokenizer.word_index.items():
-        if index == integer:
+def word_for_id(index, tokenizer):
+    """
+    Returns word from vocabulary at index
+
+    Parameters
+    ----------
+    index : int, index
+    tokenizer : tokenizer object
+
+    Returns
+    -------
+    str
+    """
+
+    for word, idx in tokenizer.word_index.items():
+        if idx == index:
             return word
     return None
 
 
-def decode_input(df,index,tokenizer):
-    
+def decode_input(input_sequences,index,tokenizer):
+    """
+    Converts input sequence back to string
+
+    Parameters
+    ----------
+    input_sequences : 2d array
+    index : int, index
+    tokenizer : tokenizer object
+
+    Returns
+    -------
+    str
+    """
+
     sentence =[]
-    for i in df[index]:
+    for i in input_sequences[index]:
         if tokenizer.index_word[i]=='<end>':
             break
 
@@ -140,7 +262,21 @@ def decode_input(df,index,tokenizer):
     return " ".join(sentence)
 
 
-def translate(sentence,tokenizer,max_length):
+def encode_sentence(sentence,tokenizer,max_length):
+    """
+    Encodes string to numerical array
+
+    Parameters
+    ----------
+    sentence : str
+    tokenizer : tokenizer object
+    max_length : int, max length of sentence
+
+    Returns
+    -------
+    array
+    """
+    
     sentence = preprocess_sentence(sentence)
     
     input_sentence = [tokenizer.word_index[i] for i in sentence.split(' ')]
@@ -149,8 +285,22 @@ def translate(sentence,tokenizer,max_length):
     return input_sentence[0]
 
 
-def predict_sequence(model, tokenizer, source):
-    source = source.reshape((1, source.shape[0]))
+def predict_sequence(model, tokenizer, input_sequence):
+    """
+    Returns the predicted translation
+
+    Parameters
+    ----------
+    model : trained model
+    tokenizer : tokenizer object
+    input_sequence : array, encoded input
+
+    Returns
+    -------
+    str
+    """
+
+    source = input_sequence.reshape((1, input_sequence.shape[0]))
     prediction = model.predict(source, verbose=0)[0]
     integers = [np.argmax(vector) for vector in prediction]
     target = list()
@@ -163,6 +313,21 @@ def predict_sequence(model, tokenizer, source):
 
 
 def plot_metrics(history, metric, val_metric, num):
+    """
+    Plots the metric of model during training. Saves plot
+
+    Parameters
+    ----------
+    history : history of model
+    metric : str, 'loss' or 'acc'
+    val_metric : str, 'val_loss' or 'val_acc'
+    num : int
+
+    Returns
+    -------
+    None
+    """
+
     fig,ax = plt.subplots(figsize=(10,6))
 
     ax.plot(history.history[metric])
@@ -175,6 +340,25 @@ def plot_metrics(history, metric, val_metric, num):
     plt.savefig(f'{metric}_plot{num}.png')
 
 def train_batches(input_set, target_set, tar_vocab_size, model, epochs, loops, checkpoint_object, tensorboard_object):
+    """
+    Batch loads data into model. Saves model
+
+    Parameters
+    ----------
+    input_set : history of model
+    target_set : str, 'loss' or 'acc'
+    tar_vocab_size : str, 'val_loss' or 'val_acc'
+    model : model object
+    epochs : int, epochs to train
+    loops : int, number of loops through data
+    checkpoint_object = checkpoint object
+    tensorboard_object = tensorboard object
+
+    Returns
+    -------
+    None
+    """
+
     for loop in range(loops):
         j=0
         for i in np.linspace(input_set.shape[0]/5,input_set.shape[0],5):
@@ -196,7 +380,7 @@ def train_batches(input_set, target_set, tar_vocab_size, model, epochs, loops, c
 
             history = model.fit(X_train, y_train, epochs=epochs, batch_size=400, validation_data=(X_test, y_test), callbacks=[checkpoint_object,tensorboard_object], verbose=2)
 
-            fig,ax = plt.subplots(figsize=(10,6))
+            #fig,ax = plt.subplots(figsize=(10,6))
 
             plot_metrics(history, 'loss', 'val_loss',j)
             plot_metrics(history, 'acc', 'val_acc',j)
@@ -250,7 +434,7 @@ if __name__ == "__main__":
                     tensorboard_callback)
 
     sentence = "where am i supposed to sleep"
-    test_sentence = translate(sentence, eng_tokenizer,eng_max_length)
+    test_sentence = encode_sentence(sentence, eng_tokenizer,eng_max_length)
 
     print(f"Sentence 1: {sentence}\n\nModel Translation: {predict_sequence(model,kor_tokenizer,test_sentence)}")
 
