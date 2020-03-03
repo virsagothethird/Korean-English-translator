@@ -33,3 +33,16 @@ Korean follows a Subject-Object-Verb grammar structure compared to English's Sub
 
 
 The use of honorifics is also highly important in Korean. Depending on who I speak to, I will adjust my speech accordingly even if I was conveying the exact same message. These intricacies can prove to be quite difficult to pick up for a machine algorithm. These are just a few of the reasons why students in Korea sometimes struggle when learning English.
+
+
+## Initial EDA
+
+I started with a dataset of a little over 3000 English-Korean sentence pairs from http://www.manythings.org/anki/. I further enriched my dataset by using a custom webscraper that scraped through thousands of KPOP song lyrics and lyric translations from https://colorcodedlyrics.com/ and obtained an addictional 95,000 English-Korean sentence pairs.
+
+Seeing the recent rise in KPOP internationally, I reasoned that the quality of song lyric translations would have risen in proportion to it's popularity as many more record labels now release official translations to their songs.
+
+This left us with a total dataset size of **98,161 sentence pairs** after cleaning with an English vocabulary size of **12,251 unique words** and a Korean vocabulary size of **58,663 unique words**.
+
+Looking at the top 20 words in our English vocabulary:
+
+![bar](
